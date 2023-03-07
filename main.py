@@ -2,7 +2,10 @@ from Calculos import proximoNumeroPrimo
 
 if __name__ == '__main__':
     numeroPrimo = 2
-    numero = int(input("Digite um numero: "))
+    
+    numeroTXT = input("Digite um numero: ")
+
+    numero = int(numeroTXT)
 
     while numero != 1:
         if numero % numeroPrimo == 0 :
