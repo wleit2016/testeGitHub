@@ -1,4 +1,3 @@
-from Calculos import ePrimo
 from Calculos import proximoNumeroPrimo
 
 if __name__ == '__main__':
