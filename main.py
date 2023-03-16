@@ -7,11 +7,16 @@ if __name__ == '__main__':
     numero2TXT = input("Digite um numero: ")
 
     numero1 = int(numero1TXT)
+    numero2 = int(numero2TXT)
 
-    while numero1 != 1:
+    condicao = True
+
+    while condicao:
         if numero1 % numeroPrimo == 0 :
             print(numero1, "|", numeroPrimo)
             numero1 = int(numero1 / numeroPrimo)
         else:
             numeroPrimo = proximoNumeroPrimo(numeroPrimo)
 
+        if numero1 == 1:
+            condicao = False
