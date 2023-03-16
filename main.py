@@ -22,5 +22,7 @@ if __name__ == '__main__':
         else:
             numeroPrimo = proximoNumeroPrimo(numeroPrimo)
 
-        if numero1 == 1:
+        if numero1 == 1 and numero2 == 1:
             condicao = False
+
+    print(numero1, " - ", numero2, "|")
