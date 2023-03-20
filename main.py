@@ -1,6 +1,7 @@
 from Calculos import proximoNumeroPrimo
 
 if __name__ == '__main__':
+    listaNumeroPrimo = []
     numeroPrimo = 2
 
     numero1TXT = input("Digite um numero: ")
@@ -19,6 +20,8 @@ if __name__ == '__main__':
 
             if numero2 % numeroPrimo == 0:
                 numero2 = int(numero2 / numeroPrimo)
+
+            listaNumeroPrimo.append(numeroPrimo)
         else:
             numeroPrimo = proximoNumeroPrimo(numeroPrimo)
 
@@ -26,3 +29,13 @@ if __name__ == '__main__':
             condicao = False
 
     print(numero1, " - ", numero2, "|")
+
+    tamanho = len(listaNumeroPrimo)
+    posicao = 0
+    multiplicar = 1
+
+    while(posicao < tamanho):
+        multiplicar = multiplicar * listaNumeroPrimo.pop()
+        posicao = posicao + 1
+
+    print('MMC = ', str(multiplicar))
